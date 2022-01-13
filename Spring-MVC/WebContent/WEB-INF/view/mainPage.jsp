@@ -8,5 +8,6 @@
 </head>
 <body>
 <h1>Hi Ici formation Spring MVC ! </h1>
+<a href="signIn">Cliquez pour se connecter : Login =></a>
 </body>
 </html>
