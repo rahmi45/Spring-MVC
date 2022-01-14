@@ -6,10 +6,18 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Student Account</title>
+<style type="text/css">
+	.error 
+	{
+		color: red;
+		font-weight: bold;
+	}
+</style>
 </head>
 <body>
 	<f:form action="processMvcTags" modelAttribute="student">
 		FirstName : <f:input path="firstName"/>
+		<f:errors path="firstName" cssClass="error"/>
 		<br>
 		LastName  : <f:input path="lastName"/>
 		<br>
