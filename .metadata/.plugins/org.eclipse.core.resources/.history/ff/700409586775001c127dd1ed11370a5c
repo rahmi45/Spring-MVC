@@ -1,0 +1,29 @@
+package fr.formation.springmvc.student;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+import fr.formation.springmvc.model.Student;
+
+
+//http://localhost:8088/Spring-MVC/studentMvcTags
+@Controller
+@RequestMapping("studentMvcTags")
+public class StudentControllerMvcTags {
+	//http://localhost:8088/Spring-MVC/studentMvcTags/accountMvcTags
+	@RequestMapping("/accountMvcTags")
+	public String studentFormMvcTags(Model model) {
+		//Student student = new Student();
+		model.addAttribute(new Student());
+		return "student-front-mvc-tags/studentAccount";
+	}
+	
+	@RequestMapping("/processMvcTags")
+	public String showInfoDataStudent(@ModelAttribute("student") Student student) {
+		return "student-front-mvc-tags/showDataStudent";
+	}
+
+}

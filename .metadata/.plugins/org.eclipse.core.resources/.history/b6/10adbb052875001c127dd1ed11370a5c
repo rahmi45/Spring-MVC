@@ -1,0 +1,5 @@
+package fr.formation.springmvc.controller;
+
+public class ProcessData {
+
+}

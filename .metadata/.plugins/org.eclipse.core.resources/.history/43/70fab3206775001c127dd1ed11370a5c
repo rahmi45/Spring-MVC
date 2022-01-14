@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+	<%@ taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Account</title>
+</head>
+<body>
+	<f:form action="processMvcTags" modelAttribute="student">
+		<f:input path="firstName"/>
+		<f:input path="lastName"/>
+		<f:input path="age"/>
+	</f:form>
+</body>
+</html>

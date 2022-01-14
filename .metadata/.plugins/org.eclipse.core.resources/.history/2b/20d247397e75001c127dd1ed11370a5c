@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+	<%@ taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Account</title>
+</head>
+<body>
+	<f:form action="processMvcTags" modelAttribute="student">
+		FirstName : <f:input path="firstName"/>
+		LastName  : <f:input path="lastName"/>
+		Age       : <f:input path="age"/>
+		Country   :
+		<f:select path="country">
+			<f:options items="${student.countryOptions}"/>
+<%-- 			<f:option value="Maroc" label="MAR"/> --%>
+<%-- 			<f:option value="France" label="FRA"/> --%>
+<%-- 			<f:option value="Tunisie" label="TUN"/> --%>
+		</f:select>
+		<br>
+		Choose your language :
+		<f:radiobutton path="language" value="Java"/>Java
+		<f:radiobutton path="language" value="Php"/>Php
+		<f:radiobutton path="language" value="C#"/>C#
+		<f:radiobutton path="language" value="C++"/>C++
+		<br>
+		ProfessorS : 
+		<f:checkbox path="professors" value="PrfMaths"/>Prof.MATHS
+		<f:checkbox path="professors" value="PrfAngl"/>Prof.ANGL
+		<f:checkbox path="professors" value="PrfScience"/>Prof.SVT
+		<br>
+		<input type="submit" value="Done"/>
+	</f:form>
+</body>
+</html>

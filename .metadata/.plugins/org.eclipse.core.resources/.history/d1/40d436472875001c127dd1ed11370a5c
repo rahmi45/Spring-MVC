@@ -1,0 +1,16 @@
+package fr.formation.springmvc.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ProcessData {
+	
+	@RequestMapping("/signIn")
+	//http://localhost:8088/Spring-MVC/signIn
+	public String myLogin() {
+		return "login";
+		
+	}
+
+}

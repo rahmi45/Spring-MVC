@@ -1,0 +1,17 @@
+package fr.formation.spring.student;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+//http://localhost:8088/Spring-MVC/student
+@Controller
+@RequestMapping("student")
+public class StudentController {
+	//http://localhost:8088/Spring-MVC/student/account
+	@RequestMapping("/account")
+	public String studentForm() {
+		return "student-front/studentAccount";
+	}
+
+}
