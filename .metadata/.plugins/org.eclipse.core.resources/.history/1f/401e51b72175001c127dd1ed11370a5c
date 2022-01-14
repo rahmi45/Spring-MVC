@@ -41,8 +41,8 @@ public class MainController {
 		String newUserName = "(username = " + userName.toUpperCase() + " )";
 		String newPassword = "(password = " + password + " )";
 		
-		//utilisation du Model => doing process in data
-		model.addAttribute("myUserName", newUserName);
+		//utilisation du Model 
+		model.addAttribute("myUsername", userName);
 		model.addAttribute("myPassword", newPassword);
 		
 		

@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>Login :</h1>
-<form action="loginprocess">
+<form action="loginprocess" method="post">
 	<input type="text" placeholder="username" name="user">
 	<input type="password" placeholder="password" name="pass">
 	<input type="submit" value="Done"> 
