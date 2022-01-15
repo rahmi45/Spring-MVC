@@ -6,6 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 import javax.validation.Constraint;
+import javax.validation.Payload;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD , ElementType.METHOD})
@@ -13,7 +14,12 @@ import javax.validation.Constraint;
 public @interface VertyCode {
 	
 	public String value() default "+02";
-	public String message() default "Invalide codeM";
+	public String message() default "Invalide code";
 	
+	//define default groups
+	public Class<?>[] groups() default {};
+	
+	//define default payloads
+	public Class<? extends Payload>[] payload() default {};
 
 }

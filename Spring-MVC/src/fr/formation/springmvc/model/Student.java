@@ -23,8 +23,10 @@ public class Student {
 	@Max(value= 50 , message ="must be less than or equal 50")
 	private String age;
 	
+	@NotNull(message = "required")
 	@VertyCode
-	private String codeM;
+	private String indexCountry;
+	
 	private String country;
 	
 	private HashMap<String, String> countryOptions;
@@ -111,7 +113,14 @@ public class Student {
 	public void setCode(Integer code) {
 		this.code = code;
 	}
-	
+
+	public String getIndexCountry() {
+		return indexCountry;
+	}
+
+	public void setIndexCountry(String indexCountry) {
+		this.indexCountry = indexCountry;
+	}
 	
 	
 

@@ -30,6 +30,9 @@
 		Code     : <f:input path="code"/>
 		<f:errors path="code" cssClass="error"/>
 		<br>
+		Index Country     : <f:input path="indexCountry"/>
+		<f:errors path="indexCountry" cssClass="error"/>
+		<br>
 		Country   :
 		<f:select path="country">
 			<f:options items="${student.countryOptions}"/>

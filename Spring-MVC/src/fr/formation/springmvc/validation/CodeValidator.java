@@ -10,16 +10,21 @@ public class CodeValidator implements ConstraintValidator<VertyCode, String>{
 	@Override
 	public void initialize(VertyCode code) {
 		myCode = code.value();
+		//System.out.println(myCode);
 	}
 	
 	@Override
-	public boolean isValid(String code, ConstraintValidatorContext arg1) {
+	public boolean isValid(String code, 
+			ConstraintValidatorContext theConstraintValidatorContext) {
 		boolean res;
+	
 		if (code != null) {
-			res= code.startsWith(code);
+			res= code.startsWith(myCode);
 		} else {
-			return true;
+			
+			res = true;
 		}
+		
 		return res;
 	}
 	
