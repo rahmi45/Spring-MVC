@@ -2,7 +2,10 @@ package fr.formation.springmvc.model;
 
 import java.util.HashMap;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 
@@ -12,6 +15,10 @@ public class Student {
 	@Size(min = 1 , message = "required")
 	private String firstName;
 	private String lastName;
+	
+	@NotNull(message = "required")
+	@Min(value= 20 , message ="must be grater than or equal 20")
+	@Max(value= 50 , message ="must be less than or equal 50")
 	private String age;
 	private String country;
 	
@@ -19,6 +26,13 @@ public class Student {
 	
 	private String  language;
 	private String[] professors;
+	
+	@NotNull(message = "required")
+	@Pattern(regexp = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$" , message="Invalid Email")
+	private String email;
+	
+	@NotNull(message = "required")
+	private Integer code;
 	
 	
 	public Student() {
@@ -72,11 +86,26 @@ public class Student {
 	public String[] getProfessors() {
 		return professors;
 	}
-
+	
 	public void setProfessors(String[] professors) {
 		this.professors = professors;
 	}
-	
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public Integer getCode() {
+		return code;
+	}
+
+	public void setCode(Integer code) {
+		this.code = code;
+	}
 	
 	
 	

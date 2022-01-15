@@ -11,6 +11,8 @@
 <p>FirstName :  ${student.firstName}</p>
 <p>LastName  :  ${student.lastName}</p>
 <p>Age       :  ${student.age}</p>
+<p>Email     :  ${student.email}</p>
+<p>Code      :  ${student.code}</p>
 <p>Country   :  ${student.country}</p>
 <p>Language  :  ${student.language}</p>
 <c:forEach var="profs" items="${student.professors}"></c:forEach>
