@@ -76,3 +76,8 @@
 127.0.0.1 - - [15/Jan/2022:13:52:21 +0100] "GET /Spring-MVC/ HTTP/1.1" 200 236
 127.0.0.1 - - [15/Jan/2022:13:52:25 +0100] "GET /Spring-MVC/studentMvcTags/accountMvcTags HTTP/1.1" 200 1698
 127.0.0.1 - - [15/Jan/2022:13:52:32 +0100] "POST /Spring-MVC/studentMvcTags/processMvcTags HTTP/1.1" 200 2126
+127.0.0.1 - - [15/Jan/2022:13:53:30 +0100] "GET / HTTP/1.1" 404 681
+127.0.0.1 - - [15/Jan/2022:13:53:32 +0100] "GET /Spring-MVC/ HTTP/1.1" 200 236
+127.0.0.1 - - [15/Jan/2022:13:53:36 +0100] "GET /Spring-MVC/studentMvcTags/accountMvcTags HTTP/1.1" 200 1698
+127.0.0.1 - - [15/Jan/2022:13:53:38 +0100] "POST /Spring-MVC/studentMvcTags/processMvcTags HTTP/1.1" 200 1931
+127.0.0.1 - - [15/Jan/2022:13:53:45 +0100] "POST /Spring-MVC/studentMvcTags/processMvcTags HTTP/1.1" 200 1940

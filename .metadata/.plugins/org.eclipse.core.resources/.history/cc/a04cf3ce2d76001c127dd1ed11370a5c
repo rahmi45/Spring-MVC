@@ -1,0 +1,22 @@
+package fr.formation.springmvc.validation;
+
+import javax.validation.ConstraintValidator;
+import javax.validation.ConstraintValidatorContext;
+
+public class CodeValidator implements ConstraintValidator<VertyCode, String>{
+
+	public String myCode;
+	
+	@Override
+	public void initialize(VertyCode code) {
+		myCode = code.value();
+	}
+	
+	@Override
+	public boolean isValid(String arg0, ConstraintValidatorContext arg1) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	
+}

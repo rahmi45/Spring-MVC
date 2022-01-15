@@ -1,0 +1,16 @@
+package fr.formation.springmvc.validation;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Target;
+
+import javax.validation.Constraint;
+
+@Target(ElementType.FIELD, ElementType.METHOD)
+@Constraint(validatedBy = CodeValidator)
+public @interface VertyCode {
+	
+	public String value() default "+02";
+	public String message() default "Invalide codeM";
+	
+
+}

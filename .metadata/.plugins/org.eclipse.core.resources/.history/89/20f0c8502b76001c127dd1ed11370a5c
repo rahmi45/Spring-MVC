@@ -8,8 +8,6 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
-import fr.formation.springmvc.validation.VertyCode;
-
 
 
 public class Student {
@@ -23,8 +21,7 @@ public class Student {
 	@Max(value= 50 , message ="must be less than or equal 50")
 	private String age;
 	
-	@VertyCode
-	private String codeM;
+	private String codeM
 	private String country;
 	
 	private HashMap<String, String> countryOptions;

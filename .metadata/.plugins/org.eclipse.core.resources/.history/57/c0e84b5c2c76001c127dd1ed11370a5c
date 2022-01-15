@@ -1,0 +1,9 @@
+package fr.formation.springmvc.validation;
+
+public interface VertyCode {
+	
+	public String value() default "+02";
+	public String message() default "Invalide codeM"
+	
+
+}
